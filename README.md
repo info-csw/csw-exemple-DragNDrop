@@ -1,25 +1,13 @@
-# Template for Testing Web project
+# Projet : Drag N Drop
 
-Template de template devant servir de base aux repository proposant le testing en web
+## Introduction
+Le Drag N Drop, c'est tout simple.
 
-Pour l'auto grading la commande à insérer est 
-```
-npm test
-```
-Si il n'y a pas de JS
-```
-npm run testhtml
-```
+Il faut donner à l'élément que l'on veut déplacer la propriété `draggable`.
+Ensuite, on définit ce qui va se produire lorsque l'élément est draggé avec l'événement `dragstart` et la méthode `setData()`.
 
-Installation des packages (non nécessaire pour les push sur git)
-```
-npm install
-```
+On définit ensuite ce qui va se produire lorsque l'élément est déposé avec les événements `dragover` et  `drop`, et la méthode `getData()`.
 
-Ensemble des packages
-```
-npm install jest
-npm init @eslint/config
-npm install documentation
-npm install html-validator
-```
+## Objectifs
+On va définir deux zones délimitées par des bordures, une zone de départ et une zone d'arrivée.  
+On va pouvoir déplacer des éléments de la zone de départ vers la zone d'arrivée, et vice-versa.

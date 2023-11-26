@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <title>Drag N Drop</title>
+</head>
+<body>
+    <header>
+        <h1>Drag N Drop</h1>
+    </header>
+    <main>
+        <div id="left" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img src="./img/dragme.png" alt="Drag Me Pic" id="dragmePic" draggable="true" ondragstart="drag(event)" />
+        </div>
+        <div id="right" ondragover="allowDrop(event)" ondrop="drop(event)">
+        </div>
+    </main>
+    <footer>
+        <p>&lt;=Drag N Drop=&gt;</p>
+    </footer>
+</body>
+</html>
